@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  background-color: #AF06FF;
+  overflow: hidden;
+}
+.wrapper{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#password{
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+#icon{
+  padding: 10px;
+  cursor: pointer;
+  
+}

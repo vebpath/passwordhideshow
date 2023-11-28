@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>password hide show</title>
+  </head>
+<body>
+<div class="wrapper">
+  <input id="password" type="password">
+  <i id="icon" class="material-icons">visibility</i>
+</div>
+<script>
+  let password = document.getElementById('password')
+  let icon = document.getElementById('icon')
+ let state = false
+ 
+  icon.addEventListener('click',()=>{
+   if(state){
+    password.type = "password"
+    icon.textContent = "visibility"
+    state = false
+   }else{
+    password.type = "text"
+    icon.textContent = "visibility_off"
+    state = true
+   }
+  })
+</script>
+</body>
+</html>
